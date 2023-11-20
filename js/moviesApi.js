@@ -24,7 +24,7 @@ search.addEventListener('submit',function(e){
       .then(res => res.json())
       .then(json => {
         search_result_section.style.display='block';
-        search_result.innerHTML+='';
+        search_result.innerHTML='';
         (json.results).map(result=>{
             search_result.innerHTML+=`
             <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
